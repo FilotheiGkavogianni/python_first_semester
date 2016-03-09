@@ -56,11 +56,11 @@ while ((board[k][l])!=(board[m][n])):
   t=math.fabs(l-n)    
   p=r+t
   print 'exeis akoma',p,'bhmata'
+  if (p==0):
+	  break
   move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
   if ((board[k][l])==(board[m][n])):
    break
-   print 'exeis akoma',p,'bhmata'
-   move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
  if move=='S' or move=='s':
   count+=1
   board[k][l]='x'
@@ -78,11 +78,11 @@ while ((board[k][l])!=(board[m][n])):
   t=math.fabs(l-n)    
   p=r+t
   print 'exeis akoma',p,'bhmata'
+  if (p==0):
+	  break
   move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
   if ((board[k][l])==(board[m][n])):
 	break
-	print 'exeis akoma',p,'bhmata'
-	move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
  if move=='A' or move=='a':
   count+=1
   board[k][l]='x'
@@ -100,11 +100,11 @@ while ((board[k][l])!=(board[m][n])):
   t=math.fabs(l-n)    
   p=r+t
   print 'exeis akoma',p,'bhmata'
+  if (p==0):
+	  break
   move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
   if ((board[k][l])==(board[m][n])):
    break
-   print 'exeis akoma',p,'bhmata'
-   move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
  if move=='D' or move=='d':
   count+=1
   board[k][l]='x'
@@ -122,11 +122,12 @@ while ((board[k][l])!=(board[m][n])):
   t=math.fabs(l-n)    
   p=r+t
   print 'exeis akoma',p,'bhmata'
+  if (p==0):
+	  break
   move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
   if ((board[k][l])==(board[m][n])):
    break
-   print 'exeis akoma',p,'bhmata'
-   move=raw_input("Πατήστε W(για πάνω)-S(για κάτω)-D(για δεξιά)-A(για αριστερά) για να κινηθείτε:")
+   
 		
 print '\t\t\tBRAVO!!!',count,'prospatheies'
 print '\t\t\tYOU WIN A "HANDMADE" DIGITAL DOG!!!'
